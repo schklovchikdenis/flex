@@ -83,48 +83,88 @@ body {
   max-width: 1180px;
   margin: 0 auto;
 }
+
+.title {
+  color: #445161;
+  font-size: 30px;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
 
-  .content {
-    flex: 1 1 auto;
-    .hi {
-      padding: 50px 0;
-      background-color: #445162;
-      .hi__row {
-        display: flex;
-        justify-content: space-between;
-        .hi__body {
-          color: #ffffff;
-          padding: 0 20px 0 0;
-        }
+.content {
+  flex: 1 1 auto;
+  .hi {
+    padding: 50px 0;
+    background-color: #445162;
+    .hi__row {
+      display: flex;
+      justify-content: space-between;
+      .hi__body {
+        color: #ffffff;
+        padding: 0 20px 0 0;
+      }
 
-        .hi__image {
-        }
-        .hi__title {
+      .hi__image {
+      }
+      .hi__title {
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 0 40px 0;
+      }
+      .hi__list {
+        li {
           text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-          font-size: 60px;
+          font-size: 20px;
           font-weight: 400;
-          margin: 0 0 40px 0;
-        }
-        .hi__list {
-          li {
-            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-            font-size: 20px;
-            font-weight: 400;
-            margin: 0 0 15px 0;
-            padding: 0 0 0 36px;
-            background: url('../img/icons/icon.png')no-repeat;
+          margin: 0 0 15px 0;
+          padding: 0 0 0 36px;
+          background: url("../img/icons/icon.png") no-repeat;
+          &:last-child {
+            margin: 0;
           }
         }
-        img {
-        }
+      }
+      img {
       }
     }
   }
-  .footer {
+}
+
+.what {
+  padding: 50px 0;/* отступы блоку */
+}
+.what__row {
+  display: flex;
+}
+.what__image {
+  flex: 0 0 430px;/* запрещаем растяжение, базис фмксированный */
+}
+.what__body {
+  flex: 1 1 auto; 
+  padding: 0 0 0 38px;
+  img {
   }
+}
+.what__title {
+  margin: 0 0 35px 0;
+}
+.what__text {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+}
+.what__text p {
+  margin: 0 0 15px 0;
+}
+.what__text p:last-child{
+  margin: 0;
+}
+
+.footer {
 }
