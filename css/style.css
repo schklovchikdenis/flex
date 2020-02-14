@@ -217,3 +217,32 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; }
+
+.vertical {
+  padding: 30px 0; }
+  .vertical .container .vertical__title {
+    text-align: center;
+    margin: 0 0 30px 0; }
+  .vertical .container .vertical__body {
+    max-width: 990px;
+    margin: 0px auto;
+    border: 1px solid red; }
+    .vertical .container .vertical__body .vertical__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0px -22.5px;
+      /* задаем расстояние между колонками */
+      border: 1px solid green; }
+    .vertical .container .vertical__body .vertical__column {
+      padding: 0px 22.5px;
+      /* возращаем назад */
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 33, 333%;
+      flex: 0 1 33, 333%;
+      /* ширина колонки */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .vertical .container .vertical__body .vertical__item {
+      border: 1px solid black; }

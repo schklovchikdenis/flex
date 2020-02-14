@@ -218,5 +218,91 @@ body {
   line-height: 24px;
 }
 
+.vertical {
+  padding: 30px 0;
+  .container {
+    .vertical__title {
+      text-align: center;
+      margin: 0 0 30px 0;
+    }
+    // контейнер чтоб не распадались элементы
+    .vertical__body {
+      max-width: 990px;
+      margin: 0px auto;
+      border: 1px solid red;
+      // флекс контейнер
+      .vertical__row {
+        display: flex;
+        margin: 0px -22.5px; /* задаем расстояние между колонками */
+        border: 1px solid green;
+      }
+      .vertical__column {
+        padding: 0px 22.5px; /* возращаем назад */
+        flex: 0 1 33, 333%; /* ширина колонки */
+        display: flex;
+      }
+      .vertical__column_1 {
+        // align-self: center;
+        // border: 1px solid black;
+      }
+      .vertical__item {
+        border: 1px solid black;
+      }
+      .vertical__subtitle {
+      }
+      .vertical__label {
+      }
+      .vertical__text {
+      }
+      .vertical__btn {
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+      }
+    }
+    .vertical__column.vertical__column_2 {
+      .vertical__item {
+      }
+      .vertical__title {
+      }
+      .vertical__label {
+      }
+      .vertical__text {
+        p {
+        }
+      }
+      .vertical__btn {
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+      }
+    }
+    .vertical__column.vertical__column_3 {
+      .vertical__item {
+      }
+      .vertical__title {
+      }
+      .vertical__label {
+      }
+      .vertical__text {
+      }
+      .vertical__btn {
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+      }
+    }
+  }
+}
+
 .footer {
 }
