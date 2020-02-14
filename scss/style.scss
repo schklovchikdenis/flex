@@ -219,7 +219,7 @@ body {
 }
 
 .vertical {
-  padding: 30px 0;
+  padding: 60px 0;
   .container {
     .vertical__title {
       text-align: center;
@@ -229,12 +229,12 @@ body {
     .vertical__body {
       max-width: 990px;
       margin: 0px auto;
-      border: 1px solid red;
+      // border: 1px solid red;
       // флекс контейнер
       .vertical__row {
         display: flex;
         margin: 0px -22.5px; /* задаем расстояние между колонками */
-        border: 1px solid green;
+        // border: 1px solid green;
       }
       .vertical__column {
         padding: 0px 22.5px; /* возращаем назад */
@@ -246,15 +246,42 @@ body {
         // border: 1px solid black;
       }
       .vertical__item {
-        border: 1px solid black;
+        border: 1px solid #445162;
+        background-color: #445162;
+        border-radius: 5px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
       }
       .vertical__subtitle {
+        text-align: center;
+        padding: 15px 0px;
+        font-size: 24px;
+        text-transform: uppercase;
       }
       .vertical__label {
+        text-align: center;
+        background-color: #fff;
+        padding: 12px 0px;
+        font-size: 40px;
+        color: #445162;
       }
       .vertical__text {
+        padding: 20px;
+        font-size: 16px;
+        line-height: 24px;        
+        flex: 1 1 auto;
       }
       .vertical__btn {
+        display: block;
+        margin: 0px 20px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #445161;
+        font-size: 18px;
         &:hover {
         }
         &:active {
@@ -264,14 +291,13 @@ body {
       }
     }
     .vertical__column.vertical__column_2 {
-      .vertical__item {
-      }
-      .vertical__title {
-      }
-      .vertical__label {
-      }
+      
       .vertical__text {
         p {
+          margin: 0px 0px 15px 0px;
+          &:last-child{
+            margin: 0px;
+          }
         }
       }
       .vertical__btn {
@@ -304,5 +330,20 @@ body {
   }
 }
 
-.footer {
-}
+
+  .footer {
+    background-color: #f5f5f5;
+    .container {
+      .footer__row {
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        align-items: center;
+        .footer__text {
+          color: #445161;
+          font-size: 12px;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+  }
