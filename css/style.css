@@ -203,3 +203,17 @@ body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 0 0 0 15px; }
+
+.item__title {
+  color: #445161;
+  font-family: "Arial MT";
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 15px 0; }
+
+.item__text {
+  color: #333333;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
